@@ -1,0 +1,140 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: cursive;
+  padding: 8px;
+}
+
+nav {
+  height: 98vh;
+  width: max-content;
+  background-color: #162439;
+  padding: 24px 24px;
+  border-radius: 12px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+}
+
+nav > div:first-child {
+  display: flex;
+  gap: 160px;
+  font-size: 20px;
+  color: #818181;
+}
+
+nav > div:first-child > i {
+  /* transition: all 0.5s; */
+  cursor: pointer;
+}
+
+nav > div:first-child > i:hover {
+  color: #3dc9f5;
+}
+
+nav > div:nth-child(2) {
+  height: 75%;
+  /* transform: translateX(-16px); */
+}
+
+nav > div:nth-child(2) > ul {
+  display: flex;
+  flex-direction: column;
+  /* gap: 24px; */
+  list-style: none;
+}
+nav > div:nth-child(2) > ul > li > a {
+  text-decoration: none;
+  color: #818181;
+  display: flex;
+  align-items: center;
+}
+
+nav > div:nth-child(2) > ul > li > a > i {
+  padding: 16px;
+  border-radius: 16px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  transition: all 0.5s;
+}
+nav > div:nth-child(2) > ul > li > a > span {
+  padding: 16px;
+  border-radius: 16px;
+  transition: all 0.5s;
+  width: 100%;
+}
+
+nav > div:nth-child(2) > ul > li > a:hover > i,
+nav > div:nth-child(2) > ul > li > a:hover > span {
+  background-color: #3dc9f5;
+  color: #fff;
+}
+
+nav > div:last-child > div:last-child {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+}
+
+nav > div:last-child > div:last-child > div {
+  padding: 16px 20px;
+  border-radius: 16px;
+  transition: all 0.5s;
+}
+
+nav > div:last-child > div:last-child > div:hover {
+  background: #3dc9f5;
+  cursor: pointer;
+}
+
+.twitter {
+  color: #3dc9f5;
+}
+
+nav > div:last-child > div:last-child > div:hover > i {
+  color: #fff;
+}
+
+.menu {
+  color: #818181;
+  cursor: pointer;
+  padding-top: 80px;
+  position: absolute;
+  bottom: 32px;
+  left: 52px;
+}
+
+.menu:hover {
+  color: #3dc9f5;
+  padding-right: 250px;
+  z-index: 10;
+}
+
+.absoluted {
+  position: absolute;
+  background-color: #1f324e;
+  transform: translateX(-20px) translateY(-88px);
+  z-index: 1;
+}
+
+.absoluted::before {
+  content: "";
+  position: absolute;
+  height: 12px;
+  width: 20px;
+  background-color: #1f324e;
+  left: 0;
+  bottom: 0;
+  clip-path: polygon(0 0, 50% 100%, 100% 0);
+  transform: translateX(12px) translateY(100%);
+}
+
+.hide {
+  display: none !important;
+}
